@@ -37,7 +37,8 @@ public class OptionalClassExamples {
 		Optional.of(name);
 	}
 
-	// If a value is present, invoke the specified consumer with the value, otherwise do
+	// If a value is present, invoke the specified consumer with the value,
+	// otherwise do
 	// nothing.
 	private static void ifPresentOptionalAPI() {
 		// The ifPresent API enables us to run some code on the wrapped value if it is
@@ -52,7 +53,8 @@ public class OptionalClassExamples {
 		opt.ifPresent(str -> System.out.println(str.length()));
 	}
 
-	// If a value is present, invoke the specified consumer with the value, otherwise do
+	// If a value is present, invoke the specified consumer with the value,
+	// otherwise do
 	// nothing.
 	private static void orElseOptionalAPI() {
 		// With orElse, the wrapped value is returned if it is present and the argument
@@ -60,14 +62,16 @@ public class OptionalClassExamples {
 		// orElse is returned if the wrapped value is absent
 		String nullName = null;
 
-		// If a value is present, invoke the specified consumer with the value, otherwise
+		// If a value is present, invoke the specified consumer with the value,
+		// otherwise
 		// do nothing.
 		//
 		String name = Optional.ofNullable(nullName).orElse("Ramesh");
 		System.out.println(name);
 	}
 
-	// Return the value if present, otherwise invoke other and return the result of that
+	// Return the value if present, otherwise invoke other and return the result of
+	// that
 	// invocation.
 	private static void orElseGetOptionalAPI() {
 		String nullName = null;
@@ -75,18 +79,19 @@ public class OptionalClassExamples {
 		System.out.println(name);
 	}
 
-	// Return the contained value, if present, otherwise throw an exception to be created
+	// Return the contained value, if present, otherwise throw an exception to be
+	// created
 	// by the provided supplier.
 	private static void orElseThrowOptionalAPI() {
-		
+
 		// This will throw exception
 		String nullName = null;
-		String name = Optional.ofNullable(nullName)
-				.orElseThrow(IllegalArgumentException::new);
+		String name = Optional.ofNullable(nullName).orElseThrow(IllegalArgumentException::new);
 		System.out.println(name);
 	}
 
-	// If a value is present in this Optional, returns the value, otherwise throws NoSuchElementException
+	// If a value is present in this Optional, returns the value, otherwise throws
+	// NoSuchElementException
 	private static void getOptionalAPI() {
 		Optional<String> opt = Optional.of("Ramesh");
 		String name = opt.get();

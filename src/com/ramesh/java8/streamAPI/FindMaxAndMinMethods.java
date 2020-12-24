@@ -13,17 +13,13 @@ public class FindMaxAndMinMethods {
 		productsList.add(new Product(4, "Sony Laptop", 28000f));
 		productsList.add(new Product(5, "Apple Laptop", 90000f));
 		// max() method to get max Product price
-		Product productA = productsList
-				.stream().max((product1,
-						product2) -> product1.getPrice() > product2.getPrice() ? 1 : -1)
-				.get();
+		Product productA = productsList.stream()
+				.max((product1, product2) -> product1.getPrice() > product2.getPrice() ? 1 : -1).get();
 
 		System.out.println(productA.getPrice());
 		// min() method to get min Product price
-		Product productB = productsList
-				.stream().max((product1,
-						product2) -> product1.getPrice() < product2.getPrice() ? 1 : -1)
-				.get();
+		Product productB = productsList.stream()
+				.max((product1, product2) -> product1.getPrice() < product2.getPrice() ? 1 : -1).get();
 		System.out.println(productB.getPrice());
 	}
 }

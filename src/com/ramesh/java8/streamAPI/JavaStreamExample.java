@@ -40,8 +40,7 @@ public class JavaStreamExample {
 
 	private static void withStreamAPI() {
 		// filtering data of list
-		List<Float> productPriceList = productsList.stream()
-				.filter((product) -> product.getPrice() > 25000)
+		List<Float> productPriceList = productsList.stream().filter((product) -> product.getPrice() > 25000)
 				.map((product) -> product.getPrice()).collect(Collectors.toList());
 		// displaying data
 		productPriceList.forEach((price) -> System.out.println(price));

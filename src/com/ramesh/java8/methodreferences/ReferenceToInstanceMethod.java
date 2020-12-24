@@ -15,9 +15,9 @@ public class ReferenceToInstanceMethod {
 		// Calling interface method
 		sayable.say();
 		// Referring non-static method using anonymous object
-		
-		// You can use  anonymous object also
-		Sayable sayable2 = new ReferenceToInstanceMethod()::saySomething; 
+
+		// You can use anonymous object also
+		Sayable sayable2 = new ReferenceToInstanceMethod()::saySomething;
 		// Calling interface method
 		sayable2.say();
 	}

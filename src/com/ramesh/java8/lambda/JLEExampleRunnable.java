@@ -3,8 +3,8 @@ package com.ramesh.java8.lambda;
 public class JLEExampleRunnable {
 
 	public static void main(String[] args) {
-		
-		//without lambda, Runnable implementation using anonymous class  
+
+		// without lambda, Runnable implementation using anonymous class
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
@@ -13,10 +13,10 @@ public class JLEExampleRunnable {
 		};
 		Thread thread = new Thread(runnable);
 		thread.run();
-		
-		 //with lambda 
+
+		// with lambda
 		Runnable withLambda = () -> System.out.println(" Runnable example with lambda exp.");
 		withLambda.run();
-		
+
 	}
 }

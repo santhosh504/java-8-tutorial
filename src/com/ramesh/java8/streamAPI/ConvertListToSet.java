@@ -17,9 +17,8 @@ public class ConvertListToSet {
 		productsList.add(new Product(5, "Apple Laptop", 90000f));
 
 		// Converting product List into Set
-		Set<Float> productPriceList = productsList.stream()
-				.filter(product -> product.getPrice() < 30000)
-				.map(product -> product.getPrice()).collect(Collectors.toSet()); 
+		Set<Float> productPriceList = productsList.stream().filter(product -> product.getPrice() < 30000)
+				.map(product -> product.getPrice()).collect(Collectors.toSet());
 		System.out.println(productPriceList);
 	}
 }

@@ -5,7 +5,10 @@ interface Arithmatic {
 }
 
 /**
- * In Java lambda expression, if there is only one statement, you may or may not use return keyword. You must use return keyword when lambda expression contains multiple statements.
+ * In Java lambda expression, if there is only one statement, you may or may not
+ * use return keyword. You must use return keyword when lambda expression
+ * contains multiple statements.
+ * 
  * @author RAMESH
  *
  */

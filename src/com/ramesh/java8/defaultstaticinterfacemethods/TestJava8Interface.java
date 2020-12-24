@@ -15,7 +15,7 @@ public class TestJava8Interface {
 		System.out.println(car.turnAlarmOn());
 		System.out.println(car.turnAlarmOff());
 		System.out.println(Vehicle.getHorsePower(2500, 480));
-		
+
 		Vehicle bike = new Motorbike("ACTIVA 4G");
 		System.out.println(bike.getBrand());
 		System.out.println(bike.speedUp());
@@ -23,6 +23,6 @@ public class TestJava8Interface {
 		System.out.println(bike.turnAlarmOn());
 		System.out.println(bike.turnAlarmOff());
 		System.out.println(Vehicle.getHorsePower(2500, 480));
-		
+
 	}
 }

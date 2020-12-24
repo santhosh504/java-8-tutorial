@@ -8,14 +8,13 @@ public class FunctionExample {
 
 	public static void main(String[] args) {
 		// convert centigrade to fahrenheit
-		Function<Integer,Double> centigradeToFahrenheitInt = x -> new Double((x*9/5)+32);
-		System.out.println("Centigrade to Fahrenheit: "+centigradeToFahrenheitInt.apply(100));
+		Function<Integer, Double> centigradeToFahrenheitInt = x -> new Double((x * 9 / 5) + 32);
+		System.out.println("Centigrade to Fahrenheit: " + centigradeToFahrenheitInt.apply(100));
 
 		// String to an integer
 		Function<String, Integer> stringToInt = x -> Integer.valueOf(x);
 		System.out.println(" String to Int: " + stringToInt.apply("4"));
-		
-		
+
 		Function<PersonEntity, PersonDTO> function = (entity) -> {
 			return new PersonDTO(entity.getName(), entity.getAge());
 		};

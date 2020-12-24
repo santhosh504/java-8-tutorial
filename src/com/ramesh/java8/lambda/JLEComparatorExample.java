@@ -39,8 +39,7 @@ public class JLEComparatorExample {
 		});
 		// Use forEach method added in java 8
 		System.out.println(" sort persons by age in ascending order");
-		listOfPerson.forEach(
-				(person) -> System.out.println(" Person name : " + person.getName()));
+		listOfPerson.forEach((person) -> System.out.println(" Person name : " + person.getName()));
 	}
 }
 
